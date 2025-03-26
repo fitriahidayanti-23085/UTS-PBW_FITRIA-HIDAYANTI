@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Website Personal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background:pink;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: pink;
+            transform: scale(1.1);
+        }
+        #contact {
+            padding: 80px 20px;
+            background: white;
+            margin: 80px auto 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: pink;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .contact-form button:hover {
+            background:pink;
+            transform: translateY(-3px);
+        }
+        footer {
+            background: pink;
+            color: black;
+            padding: 10px 0;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        footer:hover {
+            background: black;
+        }
+        .contact-btn:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#web">Pemrograman Web</a></li>
+                <li><a href="contact.html" class="contact-btn">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contact">
+        <h2>Kontak Saya</h2>
+        <p>Silakan isi form di bawah ini untuk menghubungi saya.</p>
+        <form class="contact-form" action="kontak.php" method="post">
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subjek" placeholder="Subjek" required>
+            <textarea name="pesan" rows="5" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Website Personal.</p>
+            <p>Dibuat oleh Fitria Hidayanti</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

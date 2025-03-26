@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Website Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: pink;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        #about {
+            padding: 80px 20px;
+            background: white;
+            margin: 80px auto 20px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: pink;
+            color: black;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#web">Pemrograman Web</a></li> 
+                <li><a href="contact.html">Kontak</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h1 style="margin-bottom: 20px;">Tentang Saya</h1>
+        <p><strong>Nama:</strong> Fitria Hidayanti </p>
+        <p><strong>Pendidikan:</strong> Informatika, Universitas Singaperbangsa Karawang</p>
+        <p><strong>Minat:</strong> Pengembangan Web, Pemrograman, Desain UI/UX</p>
+        <p><strong>Pengalaman:</strong> Mengerjakan proyek website, dan mengikuti kursus pemrograman.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Website Personal. </p>
+            <p>Dibuat oleh Fitria Hidayanti</p>
+    </footer>
+    <script src="script3.js"></script>
+</body>
+</html>
